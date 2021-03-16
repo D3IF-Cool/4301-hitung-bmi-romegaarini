@@ -1,10 +1,9 @@
-package org.d3if0031.hitungbmi
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
+import org.d3if0031.hitungbmi.R
 
 
 class MainActivity : AppCompatActivity() {
@@ -16,9 +15,10 @@ class MainActivity : AppCompatActivity() {
         navController = findNavController(R.id.myNavHostFragment)
         NavigationUI.setupActionBarWithNavController(this, navController)
     }
+
+
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp()
     }
 }
-
 
